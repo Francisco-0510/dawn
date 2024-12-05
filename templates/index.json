@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "custom_liquid_JLP3rt": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% section 'header' %}\n<div class=\"main-content\">\n  <h1>Bienvenido a nuestra tienda de tenis</h1>\n  <p>Explora nuestra colección:</p>\n  {% for product in collections.frontpage.products %}\n    <div class=\"product-card\">\n      <h2>{{ product.title }}</h2>\n      <p>{{ product.price | money }}</p>\n    </div>\n  {% endfor %}\n</div>\n{% section 'footer' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -224,7 +215,6 @@
     }
   },
   "order": [
-    "custom_liquid_JLP3rt",
     "image_banner",
     "rich_text",
     "featured_collection",
